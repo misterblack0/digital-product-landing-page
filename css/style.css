@@ -109,6 +109,10 @@ body {
   font-size: 2.2rem;
   font-weight: 900; }
 
+.medium-heading-3 {
+  font-size: 2.2rem;
+  font-weight: 500; }
+
 .big-heading {
   font-size: 6.5rem;
   font-weight: 800; }
@@ -116,6 +120,9 @@ body {
 .header-paragraph {
   font-size: 1.7rem;
   color: #808080; }
+
+.text-block__heading {
+  font-size: 1.8rem; }
 
 .paragraph {
   font-size: 1.5rem;
@@ -145,6 +152,36 @@ h3 {
 .margin-top-siblings-3 > * + * {
   margin-top: 3rem; }
 
+.category {
+  height: 2vh;
+  margin: 5% 15%; }
+
+.content-block {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem; }
+
+.content__side-block {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.content__main-block {
+  flex: 1;
+  display: flex; }
+
+.text-block {
+  display: flex;
+  flex-direction: column; }
+
+.columns {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
 .btn {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -161,11 +198,11 @@ h3 {
   width: 57%;
   height: 80%;
   overflow: hidden;
-  border: 3px solid;
-  border-top-color: #C0C0C0;
-  border-left-color: #696969;
-  border-bottom-color: #C0C0C0;
-  border-right-color: #696969;
+  border: 2px solid;
+  border-top-color: #DCDCDC;
+  border-left-color: #D3D3D3;
+  border-bottom-color: #DCDCDC;
+  border-right-color: #D3D3D3;
   position: relative; }
 
 .photo {
@@ -307,3 +344,9 @@ img:nth-child(4) {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+
+.services {
+  height: 39vh;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between; }
