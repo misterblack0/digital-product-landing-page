@@ -3,7 +3,7 @@
 }
 
 .about-us {
-  height: 100vh;
+  height: 70vh;
   margin-left: 15%;
   display: flex;
 
@@ -13,18 +13,14 @@
     flex-direction: column;
     justify-content: center;
     padding-right: 20rem;
-    border-bottom: var(--border);
-  }
-
-  &__slider {
-    flex: 1;
-    background-color: lightpink;
   }
 
   &__statistics {
     height: 15%;
     display: flex;
     justify-content: space-between;
+    
+    
   }
 
   &__statistics-item {
