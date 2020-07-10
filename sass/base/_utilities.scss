@@ -1,0 +1,27 @@
+.flow {
+  --flow-space: 5rem;
+}  
+
+.flow > * + * { 
+  margin-top: var(--flow-space);
+}
+
+.bg-primary {
+  background: #fff;
+}
+
+.bg-secondary {
+  background: #fff;
+}
+
+.color-primary {
+  color: #fff;
+}
+
+.color-secondary {
+  color: #fff;
+}
+
+.margin-top-siblings-3 > * + * {
+  margin-top: 3rem;
+}

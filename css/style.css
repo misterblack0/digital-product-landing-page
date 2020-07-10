@@ -1,0 +1,277 @@
+:root {
+  --color-primary: ;
+  --color-primary-light: ;
+  --color-primary-dark: ;
+  --color-secondary: ;
+  --color-secondary-light: ;
+  --color-tertiary: ;
+  --color-tertiary-light: ;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #888;
+  --color-grey-dark-3: #333;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #888;
+  --color-grey-dark-3: #333;
+  --border: 1px solid #dcdcdc; }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000; }
+
+.small-heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #696969; }
+
+.medium-heading {
+  font-size: 3rem;
+  font-weight: 900; }
+
+.medium-heading-2 {
+  font-size: 2.2rem;
+  font-weight: 900; }
+
+.big-heading {
+  font-size: 6.5rem;
+  font-weight: 800; }
+
+.header-paragraph {
+  font-size: 1.7rem;
+  color: #808080; }
+
+.paragraph {
+  font-size: 1.5rem;
+  color: #808080; }
+
+h3 {
+  margin-bottom: 4rem; }
+
+.flow {
+  --flow-space: 5rem; }
+
+.flow > * + * {
+  margin-top: var(--flow-space); }
+
+.bg-primary {
+  background: #fff; }
+
+.bg-secondary {
+  background: #fff; }
+
+.color-primary {
+  color: #fff; }
+
+.color-secondary {
+  color: #fff; }
+
+.margin-top-siblings-3 > * + * {
+  margin-top: 3rem; }
+
+.btn {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 22rem;
+  margin-top: 5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 5rem; }
+
+.header {
+  height: 95vh;
+  background-color: #dae7f7; }
+  .header__box {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    margin: 0 15%;
+    justify-content: center;
+    background-image: url("/img/phone-header.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right 1px bottom; }
+  .header__clients {
+    height: 10%;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__brands {
+    height: 100%;
+    width: 90%;
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .header__brands-item {
+    width: 20rem;
+    height: 3rem;
+    border-right: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__brands-iteml {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.navbar {
+  height: 10%;
+  background-color: #fff; }
+  .navbar__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%; }
+  .navbar__logo {
+    font-size: 2.5rem;
+    display: flex; }
+  .navbar__logo p:first-child {
+    font-weight: 800; }
+  .navbar__logo p:last-child {
+    font-weight: 300; }
+  .navbar__menu {
+    height: 100%; }
+  .navbar__menu ul {
+    height: 100%;
+    list-style: none;
+    display: flex; }
+  .navbar__menu ul li {
+    height: 100%;
+    display: inline-block;
+    position: relative; }
+  .navbar__menu ul li:hover::before {
+    content: '';
+    position: absolute;
+    top: 7.5rem;
+    background: #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    left: calc(50% - 2px); }
+  .navbar__menu a {
+    height: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 2.5rem;
+    display: inline-block;
+    display: flex;
+    align-items: center; }
+  .navbar__menu a:hover {
+    font-weight: 700; }
+  .navbar__phone p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem; }
+
+.about-us {
+  height: 100vh;
+  margin-left: 15%;
+  display: flex; }
+  .about-us__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20rem;
+    border-bottom: var(--border); }
+  .about-us__slider {
+    flex: 1;
+    background-color: lightpink; }
+  .about-us__statistics {
+    height: 15%;
+    display: flex;
+    justify-content: space-between; }
+  .about-us__statistics-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }

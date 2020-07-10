@@ -1,0 +1,130 @@
+.header {
+  height: 95vh;
+  background-color: #dae7f7;
+
+  &__box {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    margin: 0 15%;
+    justify-content: center;
+    background-image: url('/img/phone-header.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right 1px bottom;
+  }
+
+  &__clients {
+    height: 10%;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__brands {
+    height: 100%;
+    width: 90%;
+
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__brands-item {
+    width: 20rem;
+    height: 3rem;
+    border-right: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__brands-iteml {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar {
+  height: 10%;
+  background-color: #fff;
+
+  &__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    display: flex;
+  }
+
+  &__logo p:first-child {
+    font-weight: 800;
+  }
+
+  &__logo p:last-child {
+    font-weight: 300;
+  }
+
+  &__menu {
+    height: 100%;
+  }
+
+  &__menu ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+  }
+
+  &__menu ul li {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__menu ul li:hover::before {
+    content: '';
+    position: absolute;
+    top: 7.5rem;
+    background: #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    left: calc(50% - 2px);
+  }
+
+  &__menu a {
+    height: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 2.5rem;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu a:hover {
+    font-weight: 700;
+  }
+
+  &__phone p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+}

@@ -1,0 +1,36 @@
+.main {
+  
+}
+
+.about-us {
+  height: 100vh;
+  margin-left: 15%;
+  display: flex;
+
+  &__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20rem;
+    border-bottom: var(--border);
+  }
+
+  &__slider {
+    flex: 1;
+    background-color: lightpink;
+  }
+
+  &__statistics {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__statistics-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
