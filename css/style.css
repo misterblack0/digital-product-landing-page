@@ -91,7 +91,7 @@ html {
   flex-direction: column; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #000; }
@@ -100,6 +100,11 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #696969; }
+
+.small-heading-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000; }
 
 .medium-heading {
   font-size: 3rem;
@@ -115,6 +120,10 @@ body {
 
 .big-heading {
   font-size: 6.5rem;
+  font-weight: 800; }
+
+.big-heading-2 {
+  font-size: 3rem;
   font-weight: 800; }
 
 .header-paragraph {
@@ -141,13 +150,13 @@ h3 {
   background: #fff; }
 
 .bg-secondary {
-  background: #fff; }
+  background: #000; }
 
 .color-primary {
-  color: #fff; }
+  color: #808080; }
 
 .color-secondary {
-  color: #fff; }
+  color: #000; }
 
 .margin-top-siblings-3 > * + * {
   margin-top: 3rem; }
@@ -349,6 +358,47 @@ img:nth-child(4) {
     align-items: center; }
 
 .services {
-  height: 39vh;
+  height: 55vh;
   margin: 0 15%;
   display: flex; }
+
+.projects {
+  height: 40vh;
+  margin: 0 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem; }
+  .projects__wrapper {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-gap: 1rem; }
+  .projects__container {
+    height: 100%;
+    width: 27rem; }
+    .projects__container--top {
+      height: 75%;
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position: center bottom;
+      background-color: #f1f5fa; }
+    .projects__container--bottom {
+      width: 100%;
+      padding: 1.5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff; }
+
+.project-1 {
+  background-image: url("/img/project-1.png"); }
+
+.project-2 {
+  background-image: url("/img/project-2.png"); }
+
+.project-3 {
+  background-image: url("/img/project-3.png"); }
+
+.project-4 {
+  background-image: url("/img/project-4.png"); }

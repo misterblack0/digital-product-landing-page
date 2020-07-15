@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #000;
@@ -9,6 +9,12 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #696969;
+}
+
+.small-heading-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
 }
 
 .medium-heading {
@@ -28,6 +34,11 @@ body {
 
 .big-heading {
   font-size: 6.5rem;
+  font-weight: 800;
+}
+
+.big-heading-2 {
+  font-size: 3rem;
   font-weight: 800;
 }
 
